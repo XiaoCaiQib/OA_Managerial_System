@@ -1,0 +1,4 @@
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.BLL\bin\Debug\OA_Managerial_System.BLL.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.BLL\bin\Debug\OA_Managerial_System.BLL.pdb
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.BLL\obj\Debug\OA_Managerial_System.BLL.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.BLL\obj\Debug\OA_Managerial_System.BLL.pdb

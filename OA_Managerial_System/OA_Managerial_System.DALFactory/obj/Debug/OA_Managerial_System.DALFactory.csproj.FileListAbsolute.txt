@@ -1,0 +1,4 @@
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.DALFactory.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.DALFactory.pdb
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.pdb

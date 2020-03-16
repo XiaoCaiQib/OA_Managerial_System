@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UName" Type="nvarchar" MaxLength="32" />
+    <Property Name="UPwd" Type="nvarchar" MaxLength="16" Nullable="false" />
+    <Property Name="SubTime" Type="datetime" Nullable="false" />
+    <Property Name="DelFlag" Type="smallint" Nullable="false" />
+    <Property Name="ModifiedOn" Type="datetime" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="256" />
+    <Property Name="Sort" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="OAModelStoreContainer">
+    <EntitySet Name="UserInfo" EntityType="Self.UserInfo" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
