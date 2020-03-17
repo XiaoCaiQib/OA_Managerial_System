@@ -30,8 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,7 +48,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory.cs" />
+    <Compile Include="DBSession.cs" />
+    <Compile Include="DBSessionFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OA_Managerial_System.DAL\OA_Managerial_System.DAL.csproj">
+      <Project>{7B88E8D2-6A67-4932-921B-EBCFAFC5F8B1}</Project>
+      <Name>OA_Managerial_System.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OA_Managerial_System.IDAL\OA_Managerial_System.IDAL.csproj">
+      <Project>{17CEDD2E-27E6-4831-A830-1BABF87E91CD}</Project>
+      <Name>OA_Managerial_System.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OA_Managerial_System.Model\OA_Managerial_System.Model.csproj">
+      <Project>{8096CD4E-3344-4A3B-B58C-EE74B1C6BFF9}</Project>
+      <Name>OA_Managerial_System.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

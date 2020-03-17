@@ -40,7 +40,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Userinfoservice.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OA_Managerial_System.DALFactory\OA_Managerial_System.DALFactory.csproj">
+      <Project>{87b58a7a-8a07-44e4-94a8-9245cab822a9}</Project>
+      <Name>OA_Managerial_System.DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OA_Managerial_System.DAL\OA_Managerial_System.DAL.csproj">
+      <Project>{7B88E8D2-6A67-4932-921B-EBCFAFC5F8B1}</Project>
+      <Name>OA_Managerial_System.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OA_Managerial_System.IBLL\OA_Managerial_System.IBLL.csproj">
+      <Project>{21368E47-93F2-4117-8EBF-E05342B04770}</Project>
+      <Name>OA_Managerial_System.IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OA_Managerial_System.IDAL\OA_Managerial_System.IDAL.csproj">
+      <Project>{17CEDD2E-27E6-4831-A830-1BABF87E91CD}</Project>
+      <Name>OA_Managerial_System.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OA_Managerial_System.Model\OA_Managerial_System.Model.csproj">
+      <Project>{8096CD4E-3344-4A3B-B58C-EE74B1C6BFF9}</Project>
+      <Name>OA_Managerial_System.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

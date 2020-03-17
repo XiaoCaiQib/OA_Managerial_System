@@ -10,7 +10,7 @@ namespace OA_Managerial_System.DAL
 {
     public  class BaseDAL<T> where T:class,new()
     {
-        OAEntities db = new OAEntities();
+        OAEntities db =(OAEntities)DBContextFactory.CreateContext();
         //添加用户信息
         public T Addentity(T entry)
         {
@@ -23,7 +23,7 @@ namespace OA_Managerial_System.DAL
         public bool Deleteeneity(T entry)
         {
             db.Set<T>().Remove(entry);
-            return db.SaveChanges() > 0;
+            return true;
         }
         //加载用户信息
         public IQueryable<T> LoadEnity(Expression<Func<T, bool>> where)
@@ -37,11 +37,11 @@ namespace OA_Managerial_System.DAL
             total = entity.Count();
             if (istrue)
             {
-                entity = entity.OrderBy<T, s>(orderbywhere).Skip(pageindex - 1 * pagesize).Take<T>(pagesize);
+                entity = entity.OrderBy<T, s>(orderbywhere).Skip((pageindex-1) * pagesize).Take<T>(pagesize);
             }
             else
             {
-                entity = entity.OrderByDescending<T, s>(orderbywhere).Skip(pageindex - 1 * pagesize).Take<T>(pagesize);
+                entity = entity.OrderByDescending<T, s>(orderbywhere).Skip((pageindex-1) * pagesize).Take<T>(pagesize);
             }
             return entity;
 
@@ -50,7 +50,7 @@ namespace OA_Managerial_System.DAL
         public bool Updateentity(T entry)
         {
             db.Entry<T>(entry).State = System.Data.EntityState.Modified;
-            return db.SaveChanges() > 0;
+            return true;
         }
     }
 }

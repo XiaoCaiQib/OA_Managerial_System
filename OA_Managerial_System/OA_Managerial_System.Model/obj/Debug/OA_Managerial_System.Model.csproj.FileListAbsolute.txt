@@ -6,3 +6,4 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Model\bin\Debug\OA_Man
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Model\bin\Debug\EntityFramework.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Model\bin\Debug\EntityFramework.xml
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Model\obj\Debug\OA_Managerial_System.Model.csprojResolveAssemblyReference.cache
