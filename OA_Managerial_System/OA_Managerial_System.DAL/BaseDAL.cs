@@ -16,7 +16,6 @@ namespace OA_Managerial_System.DAL
         {
 
             T Userinfo = db.Set<T>().Add(entry);
-            db.SaveChanges();
             return entry;
         }
         //删除用户信息

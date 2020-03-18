@@ -15,6 +15,8 @@
     <script src="~/Scripts/jquery.easyui.min.js"></script>
     <script src="~/Scripts/easyui-lang-zh_CN.js"></script>
     <script src="~/Scripts/datapattern.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
     <script src="~/Scripts/Userinfo.js"></script>
 </head>
 
@@ -26,32 +28,31 @@
     </div>
     <!--------------添加数据---------------------->
     <div id="addDiv">
-        @using (Ajax.BeginForm("AddUserInfo", "UserInfo", new { }, new AjaxOptions() { HttpMethod = "post", OnSuccess = "afterAdd" }, new { id = "addForm" }))
+        @using (Ajax.BeginForm("AddUserInfo", "UserInfo", new { }, new AjaxOptions() { HttpMethod = "Post", OnSuccess = "afterAdd" }, new { id = "addfrom" }))
         {
             <table>
-                <tr><td>用户名</td><td><input type="text" name="UName" /></td></tr>
-                <tr><td>密码</td><td><input type="password" name="UPwd" /></td></tr>
-                <tr><td>备注</td><td><input type="text" name="Remark" /></td></tr>
-                <tr><td>排序</td><td><input type="text" name="Sort" /></td></tr>
+                <tr>
+                    <td>用户名：</td>
+                    <td><input type="text" name="UName" /></td>
+                </tr>
+                <tr>
+                    <td>密码：</td>
+                    <td><input type="text" name="UPwd" /></td>
+                </tr>
+                <tr>
+                    <td>备注：</td>
+                    <td><input type="text" name="Remark" /></td>
+                </tr>
+                <tr>
+                    <td>分类：</td>
+                    <td><input type="text" name="Sort" /></td>
+                </tr>
             </table>
         }
     </div>
 
     <!--------------修改数据---------------------->
-    <div id="editDiv">
-        @using (Ajax.BeginForm("EditUserInfo", "UserInfo", new { }, new AjaxOptions() { HttpMethod = "post", OnSuccess = "afterEdit" }, new { id = "editForm" }))
-        {
-            <input type="hidden" name="ID" id="txtId" />
-            <input type="hidden" name="SubTime" id="txtSubTime" />
-            <input type="hidden" name="DelFlag" id="txtDelFlag" />
-            <table>
-                <tr><td>用户名</td><td><input type="text" name="UName" id="txtUName" /></td></tr>
-                <tr><td>密码</td><td><input type="text" name="UPwd" id="txtUPwd" /></td></tr>
-                <tr><td>备注</td><td><input type="text" name="Remark" id="txtRemark" /></td></tr>
-                <tr><td>排序</td><td><input type="text" name="Sort" id="txtSort" /></td></tr>
-            </table>
-        }
-    </div>
+
     <!-------------------为用户分配角色---------------------->
     <div id="setUsrRoleDiv">
         <iframe id="setUserRoleFrame" width="100%" height="100%" frameborder="0"></iframe>

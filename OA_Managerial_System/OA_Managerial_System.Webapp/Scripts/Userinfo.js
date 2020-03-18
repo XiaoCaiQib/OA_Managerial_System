@@ -15,7 +15,7 @@
     });
     loadData();
 });
-
+//加载用户列表
 function loadData(pars) {
     $('#tt').datagrid({
         url: '/UserInfo/GetUserInfoList',
@@ -195,45 +195,45 @@ $.post("/UserInfo/DeleteInfo",{"strID":strId},function(data){
 
 }
 
-//添加数据
-function addInfo() {
-    $("#addDiv").css("display", "block");
-    $('#addDiv').dialog({
-        title: '添加用户数据',
-        width: 300,
-        height: 200,
-        collapsible: true,
-        maximizable: true,
-        resizable: true,
-        modal: true,
-        buttons: [{
-            text: 'Ok',
-            iconCls: 'icon-ok',
-            handler: function () {
-                //表单校验
-                validateInfo($("#addForm"));
-                $("#addForm").submit();//提交表单
-            }
-        }, {
-            text: 'Cancel',
-            handler: function () {
-                $('#addDiv').dialog('close');
-            }
-        }]
-    });
+function addInfo(){
+$("#addDiv").css("display","block");
+$("#addDiv").dialog({
+title:"AdduserInfo",
+width:300,
+height:200,
+collapsible:true,
+modal:true,
+buttons:[{
+text:"OK",
+iconCls:"icon-ok",
+handler:function(){
+    var control=$("#addfrom");
+    validateInfo();
+    $("#addfrom").submit();
+}
+},{
+    text:"canel",
+    handler:function(){
+        $("#addDiv").dialog("close");
+    }
+
+}]
+
+})
 
 }
 //完成添加后调用该方法
-function afterAdd(data) {
-    if (data == "ok") {
-        $('#addDiv').dialog('close');
-        $('#tt').datagrid('reload');//加载表格不会跳到第一页。
-        $("#addForm input").val("");
-    }
+function afterAdd(data){
+if(data=="ok"){
+ $("#addDiv").dialog("close");
+$("#tt").datagrid("reload");
+$("#addfrom input").val("");
+}
+
 }
 //表单校验
-function validateInfo(control) {
-    control.validate({//表示对哪个form表单进行校验，获取form标签的id属性的值
+function validateInfo() {
+    $("#addfrom").validate({//表示对哪个form表单进行校验，获取form标签的id属性的值
         rules: {//表示验证规则
             UName: "required",//表示对哪个表单元素进行校验，要写具体的表单元素的name属性的值
             Remark: {
@@ -241,7 +241,7 @@ function validateInfo(control) {
             },
             UPwd: {
                 required: true,
-                minlength: 5
+                minlength: 1
             },
             Sort: {
                 required: true
@@ -254,7 +254,6 @@ function validateInfo(control) {
             },
             UPwd: {
                 required: "请输入密码",
-                minlength: jQuery.format("密码不能小于{0}个字 符")
             },
             Sort: {
                 required: "请输入排序"

@@ -1,5 +1,6 @@
 ﻿using OA_Managerial_System.BLL;
 using OA_Managerial_System.IBLL;
+using OA_Managerial_System.Model;
 using OA_Managerial_System.Model.EnumType;
 using System;
 using System.Collections.Generic;
@@ -54,6 +55,14 @@ namespace OA_Managerial_System.Webapp.Controllers
                 return Content("No");
             }
 
+        }
+        //添加用户信息
+        public ActionResult AddUserInfo(UserInfo userinfo) {
+            userinfo.DelFlag = 0;
+            userinfo.SubTime = DateTime.Now;
+            userinfo.ModifiedOn = DateTime.Now;
+            userinfoService.Addentity(userinfo);
+            return Content("ok");
         }
     }
 }

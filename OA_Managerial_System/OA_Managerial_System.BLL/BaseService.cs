@@ -38,6 +38,7 @@ namespace OA_Managerial_System.BLL
         {
 
              currentdal.Addentity(entry);
+            currentdbsession.SaveChanges();
             return entry;
         }
         //删除用户信息
