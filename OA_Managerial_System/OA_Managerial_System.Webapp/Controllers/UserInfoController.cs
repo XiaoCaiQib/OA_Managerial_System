@@ -64,5 +64,24 @@ namespace OA_Managerial_System.Webapp.Controllers
             userinfoService.Addentity(userinfo);
             return Content("ok");
         }
+        //展示要修改的用户数据
+        public ActionResult ShowUserinfo() {
+            int id = int.Parse(Request["id"]);
+            var userinfo = userinfoService.LoadEnity(u => u.ID == id).FirstOrDefault();
+            return Json(userinfo);
+        }
+        //修改用户列表数据
+        public ActionResult EditUserinfo(  UserInfo userinfo) {
+            userinfo.ModifiedOn = DateTime.Now;
+            userinfo.SubTime = DateTime.Now;
+            if (userinfoService.Updateentity(userinfo)) {
+                return Content("ok");
+            }
+            else
+            {
+                return Content("fail");
+            }
+          
+        }
     }
 }

@@ -52,7 +52,32 @@
     </div>
 
     <!--------------修改数据---------------------->
-
+    <div id="editDiv">
+        @using (Ajax.BeginForm("EditUserinfo", "userInfo", new { }, new AjaxOptions() { HttpMethod = "Post", OnSuccess = "afterEdit" }, new { id = "editform" }))
+        {      <input type="hidden" name="ID" id="ID" />
+            <input type="hidden" id="subtime" name="subtime" />
+            <input type="hidden" id="delflag" name="delflag" />
+            <table>
+               
+                <tr>
+                    <td>用户名:</td>
+                    <td><input type="text" name="UName"  id="textuname"/></td>
+                </tr>
+                <tr>
+                    <td>密码:</td>
+                    <td><input type="text" name="UPWD"  id="textWPWD"/></td>
+                </tr>
+                <tr>
+                    <td>备注:</td>
+                    <td><input type="text" name="Remark"  id="txtRemark"/></td>
+                </tr>
+                <tr>
+                    <td>排序:</td>
+                    <td><input type="text" name="Sort"  id="txtSort"/></td>
+                </tr>
+            </table>
+        }
+    </div>
     <!-------------------为用户分配角色---------------------->
     <div id="setUsrRoleDiv">
         <iframe id="setUserRoleFrame" width="100%" height="100%" frameborder="0"></iframe>

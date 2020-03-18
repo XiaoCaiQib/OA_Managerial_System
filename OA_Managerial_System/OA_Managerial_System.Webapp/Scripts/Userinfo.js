@@ -262,48 +262,47 @@ function validateInfo() {
     });
 }
 //展示一下要修改的数据.
-function showEditInfo() {
-    //判断一下用户是否选择了要修改的数据
-    var rows = $('#tt').datagrid('getSelections');//获取所选择的行
-    if (rows.length != 1) {
-        $.messager.alert("提示", "请选择要修改的数据", "error");
-        return;
+function showEditInfo(){
+    //判断是否选择了对的数据
+    var row=$("#tt").datagrid("getSelections");
+    if(row.length!=1){
+  $.messager.alert("提示","请选择要修修改的数据！","error")
+  return;
     }
-    //将要修改的数据查询出来，显示到文本框中。
-    var id = rows[0].ID;
-    $.post("/UserInfo/ShowEditInfo", { "id": id }, function (data) {
-        $("#txtUName").val(data.UName);
-        $("#txtUPwd").val(data.UPwd);
-        $("#txtRemark").val(data.Remark);
-        $("#txtSort").val(data.Sort);
-        $("#txtSubTime").val(ChangeDateFormat(data.SubTime));
-        $("#txtDelFlag").val(data.DelFlag);
-        $("#txtId").val(data.ID);
-    });
-    $("#editDiv").css("display", "block");
-    $('#editDiv').dialog({
-        title: '编辑用户数据',
-        width: 300,
-        height: 200,
-        collapsible: true,
-        maximizable: true,
-        resizable: true,
-        modal: true,
-        buttons: [{
-            text: 'Ok',
-            iconCls: 'icon-ok',
-            handler: function () {
-                //表单校验
-                validateInfo($("#editForm"));
-                $("#editForm").submit();//提交表单
-            }
-        }, {
-            text: 'Cancel',
-            handler: function () {
-                $('#editDiv').dialog('close');
-            }
-        }]
-    });
+   var id=row[0].ID;
+   //查询要修改的数据
+   $.post("/UserInfo/ShowUserinfo",{"id":id},function(data){
+    $("#ID").val(data.ID);
+    $("#textuname").val(data.UName);
+    $("#textWPWD").val(data.UPwd);
+    $("#txtRemark").val(data.Remark);
+    $("#txtSort").val(data.Sort);
+    $("#subtime").val(data.SubTime);
+    $("#delflag").val(data.deflag);
+   })   
+ $("#editDiv").css("display","block");
+ $("#editDiv").dialog({
+    title:"EdituserInfo",
+    width:300,
+    height:200,
+    collapsible:true,
+    modal:true,
+    buttons:[{
+    text:"OK",
+    iconCls:"icon-ok",
+    handler:function(){
+      $("#editform").submit();
+    }
+    },{
+        text:"canel",
+        handler:function(){
+            $("#addDiv").dialog("close");
+        }
+    
+    }]
+    
+    })
+
 }
 //更新以后调用该方法.
 function afterEdit(data) {
