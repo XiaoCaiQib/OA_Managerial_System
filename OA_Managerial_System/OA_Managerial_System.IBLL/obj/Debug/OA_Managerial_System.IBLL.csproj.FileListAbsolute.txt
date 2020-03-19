@@ -13,4 +13,6 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Mana
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Managerial_System.Model.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\EntityFramework.xml
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\obj\Debug\OA_Managerial_System.IBLL.csprojResolveAssemblyReference.cache
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\obj\Debug\OA_Managerial_System.IBLL.csprojAssemblyReference.cache
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\obj\Debug\OA_Managerial_System.IBLL.csproj.CoreCompileInputs.cache
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\obj\Debug\OA_Managerial_System.IBLL.csproj.CopyComplete

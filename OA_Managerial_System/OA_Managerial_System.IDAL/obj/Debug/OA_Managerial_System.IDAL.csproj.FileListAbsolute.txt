@@ -1,6 +1,5 @@
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IDAL\bin\Debug\OA_Managerial_System.IDAL.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IDAL\bin\Debug\OA_Managerial_System.IDAL.pdb
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IDAL\obj\Debug\OA_Managerial_System.IDAL.csprojResolveAssemblyReference.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IDAL\obj\Debug\OA_Managerial_System.IDAL.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IDAL\obj\Debug\OA_Managerial_System.IDAL.pdb
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IDAL\bin\Debug\OA_Managerial_System.Model.dll
@@ -9,3 +8,6 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IDAL\bin\Debug\OA_Mana
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IDAL\bin\Debug\OA_Managerial_System.Model.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IDAL\bin\Debug\EntityFramework.xml
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IDAL\obj\Debug\OA_Managerial_System.IDAL.csprojAssemblyReference.cache
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IDAL\obj\Debug\OA_Managerial_System.IDAL.csproj.CoreCompileInputs.cache
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IDAL\obj\Debug\OA_Managerial_System.IDAL.csproj.CopyComplete

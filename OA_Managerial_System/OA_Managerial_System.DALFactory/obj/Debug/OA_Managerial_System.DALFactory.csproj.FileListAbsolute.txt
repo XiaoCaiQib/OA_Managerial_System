@@ -14,4 +14,6 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\O
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.Model.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\EntityFramework.xml
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\zh-Hans\EntityFramework.resources.dll
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.csprojResolveAssemblyReference.cache
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.csprojAssemblyReference.cache
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.csproj.CoreCompileInputs.cache
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.csproj.CopyComplete

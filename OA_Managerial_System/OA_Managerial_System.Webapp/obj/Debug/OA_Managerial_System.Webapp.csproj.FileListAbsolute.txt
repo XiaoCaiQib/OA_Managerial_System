@@ -69,7 +69,6 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\zh-Hans\Sys
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\zh-Hans\System.Web.WebPages.resources.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\obj\Debug\OA_Managerial_System.Webapp.csprojResolveAssemblyReference.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\obj\Debug\OA_Managerial_System.Webapp.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\obj\Debug\OA_Managerial_System.Webapp.pdb
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\OA_Managerial_System.BLL.dll
@@ -90,3 +89,10 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\OA_Manageri
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\OA_Managerial_System.DALFactory.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\EntityFramework.xml
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\zh-Hans\EntityFramework.resources.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\Autofac.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\Autofac.Integration.Mvc.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\Autofac.xml
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\Autofac.Integration.Mvc.xml
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\obj\Debug\OA_Managerial_System.Webapp.csprojAssemblyReference.cache
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\obj\Debug\OA_Managerial_System.Webapp.csproj.CoreCompileInputs.cache
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\obj\Debug\OA_Managerial_System.Webapp.csproj.CopyComplete

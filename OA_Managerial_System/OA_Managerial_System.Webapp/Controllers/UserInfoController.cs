@@ -12,8 +12,12 @@ namespace OA_Managerial_System.Webapp.Controllers
 {
     public class UserInfoController : Controller
     {
+        public IUserinfoService userinfoService;
+        public UserInfoController(IUserinfoService _userinfoService)
+        {
+            userinfoService = _userinfoService;
+        }
         // GET: UserInfo
-        IUserinfoService userinfoService = new Userinfoservice();
         public ActionResult Index()
         {
 
