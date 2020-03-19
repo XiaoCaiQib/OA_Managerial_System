@@ -96,3 +96,7 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\Autofac.Int
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\obj\Debug\OA_Managerial_System.Webapp.csprojAssemblyReference.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\obj\Debug\OA_Managerial_System.Webapp.csproj.CoreCompileInputs.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\obj\Debug\OA_Managerial_System.Webapp.csproj.CopyComplete
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\log4net.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\log4net.xml
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\OA_Managerial_System.Common.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\OA_Managerial_System.Common.pdb

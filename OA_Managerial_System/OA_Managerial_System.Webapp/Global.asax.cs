@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
+using log4net;
 using OA_Managerial_System.BLL;
 using OA_Managerial_System.IBLL;
 using OA_Managerial_System.Webapp.Models;
@@ -21,6 +22,8 @@ namespace OA_Managerial_System.Webapp
     {
         protected void Application_Start()
         {
+            //读取log4net的配置
+            log4net.Config.XmlConfigurator.Configure();
             //Autofuc依赖注入
             //创建autofac管理注册类的容器实例
             var builder = new ContainerBuilder();
@@ -48,8 +51,10 @@ namespace OA_Managerial_System.Webapp
                     {
                    Exception dequeue=MyExceptionAttribute.queue.Dequeue();
                         if (dequeue != null) {
-                            string filename = DateTime.Now.ToShortDateString();
-                            File.AppendAllText(Logfile + filename + ".txt", dequeue.ToString(), Encoding.UTF8);
+                            //string filename = DateTime.Now.ToShortDateString();
+                            //File.AppendAllText(Logfile + filename + ".txt", dequeue.ToString(), Encoding.UTF8);
+                            ILog logger = LogManager.GetLogger("errormsg");
+                            logger.Error(dequeue.ToString());
                         }
                         else {
                             Thread.Sleep(3000);

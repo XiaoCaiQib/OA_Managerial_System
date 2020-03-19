@@ -10,7 +10,7 @@ using System.Web.Mvc;
 
 namespace OA_Managerial_System.Webapp.Controllers
 {
-    public class UserInfoController : Controller
+    public class UserInfoController : BaseController
     {
         public IUserinfoService userinfoService;
         public UserInfoController(IUserinfoService _userinfoService)

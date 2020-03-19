@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/Content/Css/Index.css">
+    <link rel="stylesheet" href="~/Content/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+  <script src="~/Scripts/Login.js"></script>
+</head>
+<body>
+    <div class="login">
+        <h1> Login</h1>
+        <div class="form">
+            <div class="item">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <input id="uname" type=text placeholder="UserName">
+            </div>
+            <div class="item">
+                <i class="fa fa-key" aria-hidden="true"></i>
+                <input id="upwd" type=text placeholder="Password">
+            </div>
+            <div class="item">
+                <i class="fa fa-meetup" aria-hidden="true"></i>
+                <input type=text  id="code" placeholder="验证码">
+            </div>
+            <div>
+                <img id="img" src="/Login/ShowImg?id=1"  class="codecss" />
+                <a href="javascript:void(0)" class="fontcode" id="acode" >看不清,换一张</a>
+            </div>
+        </div>
+        <button id="login" value="Login">Login</button>
+    </div>
+</body>
+</html>
