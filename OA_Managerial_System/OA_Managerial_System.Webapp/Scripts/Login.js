@@ -16,10 +16,10 @@ $(function () {
             data: logininfo,
             success: function (data) {
                 if (data == "ok") {
-                    window.location.href = "/userinfo/index";
+                    window.location.href = "/home/homepage";
                 }
                 else {
-                    window.location.href = "~/error.html";
+                    window.location.href = "/error.html";
                 }
             }
         })

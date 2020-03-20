@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace OA_Managerial_System.Webapp.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {
@@ -24,6 +24,9 @@ namespace OA_Managerial_System.Webapp.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+        public ActionResult HomePage() {
             return View();
         }
     }
