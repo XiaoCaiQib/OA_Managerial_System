@@ -26,5 +26,9 @@ namespace OA_Managerial_System.Model
         }
     
         public DbSet<UserInfo> UserInfo { get; set; }
+        public DbSet<ActionInfo> ActionInfo { get; set; }
+        public DbSet<Department> Department { get; set; }
+        public DbSet<R_UserInfo_ActionInfo> R_UserInfo_ActionInfo { get; set; }
+        public DbSet<RoleInfo> RoleInfo { get; set; }
     }
 }

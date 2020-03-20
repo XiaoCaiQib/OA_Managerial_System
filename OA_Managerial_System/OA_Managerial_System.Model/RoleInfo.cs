@@ -12,26 +12,23 @@ namespace OA_Managerial_System.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class UserInfo
+    public partial class RoleInfo
     {
-        public UserInfo()
+        public RoleInfo()
         {
-            this.R_UserInfo_ActionInfo = new HashSet<R_UserInfo_ActionInfo>();
-            this.Department = new HashSet<Department>();
-            this.RoleInfo = new HashSet<RoleInfo>();
+            this.ActionInfo = new HashSet<ActionInfo>();
+            this.UserInfo = new HashSet<UserInfo>();
         }
     
         public int ID { get; set; }
-        public string UName { get; set; }
-        public string UPwd { get; set; }
-        public System.DateTime SubTime { get; set; }
+        public string RoleName { get; set; }
         public short DelFlag { get; set; }
-        public System.DateTime ModifiedOn { get; set; }
+        public System.DateTime SubTime { get; set; }
         public string Remark { get; set; }
+        public System.DateTime ModifiedOn { get; set; }
         public string Sort { get; set; }
     
-        public virtual ICollection<R_UserInfo_ActionInfo> R_UserInfo_ActionInfo { get; set; }
-        public virtual ICollection<Department> Department { get; set; }
-        public virtual ICollection<RoleInfo> RoleInfo { get; set; }
+        public virtual ICollection<ActionInfo> ActionInfo { get; set; }
+        public virtual ICollection<UserInfo> UserInfo { get; set; }
     }
 }
