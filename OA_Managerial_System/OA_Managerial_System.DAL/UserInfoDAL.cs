@@ -9,7 +9,7 @@ using System.Linq.Expressions;
 
 namespace OA_Managerial_System.DAL
 {
-    public class UserInfoDAL :  BaseDAL<UserInfo>, IUserInfoDal
+    public partial class UserInfoDAL :  BaseDAL<UserInfo>, IUserInfoDal
     {
        
     }

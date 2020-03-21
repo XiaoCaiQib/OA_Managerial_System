@@ -1,12 +1,11 @@
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\OA_Managerial_System.DAL.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\OA_Managerial_System.DAL.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\OA_Managerial_System.DAL.pdb
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\obj\Debug\OA_Managerial_System.DAL.dll
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\obj\Debug\OA_Managerial_System.DAL.pdb
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\OA_Managerial_System.DAL.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\EntityFramework.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\OA_Managerial_System.IDAL.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\OA_Managerial_System.Model.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\OA_Managerial_System.IDAL.pdb
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\OA_Managerial_System.IDAL.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\OA_Managerial_System.Model.pdb
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\OA_Managerial_System.Model.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\EntityFramework.xml
@@ -14,4 +13,5 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\zh-Hans\
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\obj\Debug\OA_Managerial_System.DAL.csprojAssemblyReference.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\obj\Debug\OA_Managerial_System.DAL.csproj.CoreCompileInputs.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\obj\Debug\OA_Managerial_System.DAL.csproj.CopyComplete
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\OA_Managerial_System.IDAL.dll.config
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\obj\Debug\OA_Managerial_System.DAL.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\obj\Debug\OA_Managerial_System.DAL.pdb

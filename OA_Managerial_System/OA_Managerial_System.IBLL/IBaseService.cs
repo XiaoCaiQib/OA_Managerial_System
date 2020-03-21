@@ -11,8 +11,8 @@ namespace OA_Managerial_System.IBLL
 {
     public interface IBaseService<T> where T:class,new()
     {
-        IDBSession currentdbsession { get; }
-        IBaseDAL<T> currentdal { get; set; }
+        IDBSession CurrentDBSession { get; }
+        IBaseDAL<T> CurrentDal { get; set; }
         IQueryable<T> LoadEnity(Expression<Func<T, bool>> where);
         T Addentity(T entry);
         bool Deleteeneity(T entry);

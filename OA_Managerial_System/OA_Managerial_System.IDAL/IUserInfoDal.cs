@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OA_Managerial_System.IDAL
 {
-   public  interface IUserInfoDal:IBaseDAL<UserInfo>
+   public  partial interface IUserInfoDal : IBaseDAL<UserInfo>
     {
        
     }

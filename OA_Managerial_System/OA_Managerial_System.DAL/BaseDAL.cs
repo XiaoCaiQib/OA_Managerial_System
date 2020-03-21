@@ -10,7 +10,7 @@ namespace OA_Managerial_System.DAL
 {
     public  class BaseDAL<T> where T:class,new()
     {
-        OAEntities db =(OAEntities)DBContextFactory.CreateContext();
+        OAEntities db =(OAEntities)DBContextFactory.CreateDbContext();
         //添加用户信息
         public T Addentity(T entry)
         {

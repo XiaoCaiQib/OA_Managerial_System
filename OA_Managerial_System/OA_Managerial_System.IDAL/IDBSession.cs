@@ -12,10 +12,10 @@ namespace OA_Managerial_System.IDAL
         /// <summary>
         /// 业务层调用会话层的接口
         /// </summary>
-        public interface IDBSession
+        public partial interface IDBSession
         {
             DbContext dbcontext { get; }
-            IUserInfoDal _userinfodal { get; set; }
+          //  IUserInfoDal _userinfodal { get; set; }
             bool SaveChanges();
 
         

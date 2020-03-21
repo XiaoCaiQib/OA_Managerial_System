@@ -16,48 +16,48 @@ namespace OA_Managerial_System.BLL
     /// <typeparam name="T"></typeparam>
     public abstract class BaseService<T> where T : class, new()
     {
-        public  IDBSession currentdbsession
+        public  IDBSession CurrentDBSession
         {
             get
             {
                 return DBSessionFactory.CreateDBSession();
             }
         }
-        public IBaseDAL<T> currentdal { get; set; }
-        public abstract void SetCurrent();
+        public IBaseDAL<T> CurrentDal { get; set; }
+        public abstract void SetCurrentDal();
         public BaseService()
         {
             //子类必须实现抽象方法
-            SetCurrent();
+            SetCurrentDal();
         }
         //加载用户信息
         public IQueryable<T> LoadEnity(Expression<Func<T, bool>> where) {
-            return currentdal.LoadEnity(where);
+            return CurrentDal.LoadEnity(where);
         }
         public T Addentity(T entry)
         {
 
-             currentdal.Addentity(entry);
-            currentdbsession.SaveChanges();
+            CurrentDal.Addentity(entry);
+            CurrentDBSession.SaveChanges();
             return entry;
         }
         //删除用户信息
         public bool Deleteeneity(T entry)
         {
-            currentdal.Deleteeneity(entry);
-            return currentdbsession.SaveChanges();
+            CurrentDal.Deleteeneity(entry);
+            return CurrentDBSession.SaveChanges();
         }
         //分页加载
         public IQueryable<T> PageEntity<s>(int pagesize, int pageindex, out int total, Expression<Func<T, bool>> where, Expression<Func<T, s>> orderbywhere, bool istrue)
         {
-            return currentdal.PageEntity<s>(pagesize,pageindex,out total,where,orderbywhere,istrue);
+            return CurrentDal.PageEntity<s>(pagesize,pageindex,out total,where,orderbywhere,istrue);
 
         }
         //修改用户信息
         public bool Updateentity(T entry)
         {
-            currentdal.Updateentity(entry);
-            return currentdbsession.SaveChanges();
+            CurrentDal.Updateentity(entry);
+            return CurrentDBSession.SaveChanges();
         }
     }
 }

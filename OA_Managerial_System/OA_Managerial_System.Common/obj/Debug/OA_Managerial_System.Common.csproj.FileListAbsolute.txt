@@ -1,6 +1,6 @@
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Common\bin\Debug\OA_Managerial_System.Common.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Common\bin\Debug\OA_Managerial_System.Common.pdb
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Common\obj\Debug\OA_Managerial_System.Common.dll
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Common\obj\Debug\OA_Managerial_System.Common.pdb
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Common\obj\Debug\OA_Managerial_System.Common.csprojAssemblyReference.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Common\obj\Debug\OA_Managerial_System.Common.csproj.CoreCompileInputs.cache
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Common\obj\Debug\OA_Managerial_System.Common.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Common\obj\Debug\OA_Managerial_System.Common.pdb

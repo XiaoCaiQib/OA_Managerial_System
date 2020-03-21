@@ -11,22 +11,22 @@ namespace OA_Managerial_System.BLL
     /// <summary>
     /// 业务类
     /// </summary>
-    public class Userinfoservice : BaseService <UserInfo>,IUserinfoService
+    public partial class UserInfoService : BaseService <UserInfo>,IUserinfoService
     {
      //批量删除
         public bool DleteuserInfo(List<int> arry)
         {
-            var userinfoentity = this.currentdbsession._userinfodal.LoadEnity(u => arry.Contains(u.ID));
+            var userinfoentity = this.CurrentDBSession.UserInfoDal.LoadEnity(u => arry.Contains(u.ID));
             foreach (var item in userinfoentity)
             {
-                this.currentdbsession._userinfodal.Deleteeneity(item);
+                this.CurrentDBSession.UserInfoDal.Deleteeneity(item);
             }
-            return currentdbsession.SaveChanges();
+            return CurrentDBSession.SaveChanges();
         }
-        public override void SetCurrent()
-        {
+        //public override void SetCurrentDal()
+        //{
 
-            currentdal = this.currentdbsession._userinfodal;
-        }
+        //    CurrentDal = this.CurrentDBSession.UserInfoDal;
+        //}
     }
 }

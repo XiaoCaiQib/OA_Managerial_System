@@ -29,7 +29,7 @@ namespace OA_Managerial_System.Webapp
             var builder = new ContainerBuilder();
             //下面就需要为这个容器注册它可以管理的类型
             //builder的Register方法可以通过多种方式注册类型,之前在控制台程序里面也演示了好几种方式了。
-            builder.RegisterType<Userinfoservice>().As<IUserinfoService>();
+            builder.RegisterType<UserInfoService>().As<IUserinfoService>();
             //builder.RegisterType<DefaultController>().InstancePerDependency();
             //使用Autofac提供的RegisterControllers扩展方法来对程序集中所有的Controller一次性的完成注册
             builder.RegisterControllers(Assembly.GetExecutingAssembly());

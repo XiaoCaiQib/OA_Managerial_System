@@ -1,8 +1,6 @@
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.DALFactory.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.DALFactory.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.DALFactory.pdb
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.dll
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.pdb
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.DALFactory.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\EntityFramework.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.DAL.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.IDAL.dll
@@ -10,6 +8,7 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\O
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.DAL.pdb
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.DAL.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.IDAL.pdb
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.IDAL.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.Model.pdb
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.Model.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\EntityFramework.xml
@@ -17,4 +16,5 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\z
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.csprojAssemblyReference.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.csproj.CoreCompileInputs.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.csproj.CopyComplete
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.IDAL.dll.config
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.pdb

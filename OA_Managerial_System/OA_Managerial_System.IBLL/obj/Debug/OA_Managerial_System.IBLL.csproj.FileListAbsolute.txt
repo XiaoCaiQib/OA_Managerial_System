@@ -1,7 +1,5 @@
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Managerial_System.IBLL.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Managerial_System.IBLL.pdb
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\obj\Debug\OA_Managerial_System.IBLL.dll
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\obj\Debug\OA_Managerial_System.IBLL.pdb
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Managerial_System.DAL.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Managerial_System.IDAL.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Managerial_System.Model.dll
@@ -9,6 +7,7 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\EntityF
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Managerial_System.DAL.pdb
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Managerial_System.DAL.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Managerial_System.IDAL.pdb
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Managerial_System.IDAL.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Managerial_System.Model.pdb
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Managerial_System.Model.dll.config
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\EntityFramework.xml
@@ -16,4 +15,5 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\zh-Hans
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\obj\Debug\OA_Managerial_System.IBLL.csprojAssemblyReference.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\obj\Debug\OA_Managerial_System.IBLL.csproj.CoreCompileInputs.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\obj\Debug\OA_Managerial_System.IBLL.csproj.CopyComplete
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\bin\Debug\OA_Managerial_System.IDAL.dll.config
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\obj\Debug\OA_Managerial_System.IBLL.dll
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.IBLL\obj\Debug\OA_Managerial_System.IBLL.pdb

@@ -11,7 +11,7 @@ namespace OA_Managerial_System.DAL
 {
     public class DBContextFactory
     {
-        public static DbContext CreateContext()
+        public static DbContext CreateDbContext()
         {
             DbContext db = (DbContext)CallContext.GetData("dbcontext");
             if (db == null)
