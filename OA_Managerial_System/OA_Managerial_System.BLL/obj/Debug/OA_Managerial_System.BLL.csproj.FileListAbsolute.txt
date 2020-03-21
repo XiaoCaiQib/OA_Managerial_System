@@ -21,3 +21,4 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.BLL\bin\Debug\OA_Manag
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.BLL\obj\Debug\OA_Managerial_System.BLL.csprojAssemblyReference.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.BLL\obj\Debug\OA_Managerial_System.BLL.csproj.CoreCompileInputs.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.BLL\obj\Debug\OA_Managerial_System.BLL.csproj.CopyComplete
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.BLL\bin\Debug\OA_Managerial_System.IDAL.dll.config

@@ -100,3 +100,4 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\log4net.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\log4net.xml
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\OA_Managerial_System.Common.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\OA_Managerial_System.Common.pdb
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Webapp\bin\OA_Managerial_System.IDAL.dll.config

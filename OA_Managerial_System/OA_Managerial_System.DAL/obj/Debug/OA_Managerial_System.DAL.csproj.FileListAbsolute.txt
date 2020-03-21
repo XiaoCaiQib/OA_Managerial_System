@@ -14,3 +14,4 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\zh-Hans\
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\obj\Debug\OA_Managerial_System.DAL.csprojAssemblyReference.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\obj\Debug\OA_Managerial_System.DAL.csproj.CoreCompileInputs.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\obj\Debug\OA_Managerial_System.DAL.csproj.CopyComplete
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DAL\bin\Debug\OA_Managerial_System.IDAL.dll.config

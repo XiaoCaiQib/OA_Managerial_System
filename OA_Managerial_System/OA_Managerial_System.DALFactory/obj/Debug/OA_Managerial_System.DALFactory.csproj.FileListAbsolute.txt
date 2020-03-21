@@ -17,3 +17,4 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\z
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.csprojAssemblyReference.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.csproj.CoreCompileInputs.cache
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\obj\Debug\OA_Managerial_System.DALFactory.csproj.CopyComplete
+D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.DALFactory\bin\Debug\OA_Managerial_System.IDAL.dll.config
