@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>角色管理</title>
+    <link href="~/Content/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/Content/themes/icon.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.easyui.min.js"></script>
+    <script src="~/Scripts/easyui-lang-zh_CN.js"></script>
+    <script src="~/Scripts/datapattern.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/Roleinfo.js"></script>
+</head>
+<body>
+    <div>
+        <div>
+            <table id="tt" style="width: 700px;" title="标题，可以使用代码进行初始化，也可以使用这种属性的方式" iconcls="icon-edit"></table>
+        </div>
+        <!--这是一个添加角色的div-->
+        <div id="addDiv">
+            @using (Ajax.BeginForm("AddRoleInfo", "Roleinfo", new { }, new AjaxOptions() { HttpMethod = "Post", OnSuccess = "afterAdd" }, new { id = "addfrom" }))
+            {
+                <table>
+                    <tr>
+                        <td>角色名：</td>
+                        <td><input type="text" name="RoleName" /></td>
+                    </tr>
+                    <tr>
+                        <td>备注：</td>
+                        <td><input type="text" name="Remark" /></td>
+                    </tr>
+                    <tr>
+                        <td>分类：</td>
+                        <td><input type="text" name="Sort" /></td>
+                    </tr>
+                </table>
+            }
+        </div>
+       
+    </div>
+</body>
+</html>
