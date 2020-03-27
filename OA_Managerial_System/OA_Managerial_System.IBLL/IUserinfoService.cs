@@ -10,5 +10,6 @@ namespace OA_Managerial_System.IBLL
     public interface IUserinfoService:IBaseService<UserInfo>
     {
         bool DleteuserInfo(List<int> arry);
+        bool SetUserRoleInfo(int userId, List<int> roleIdList);
     }
 }

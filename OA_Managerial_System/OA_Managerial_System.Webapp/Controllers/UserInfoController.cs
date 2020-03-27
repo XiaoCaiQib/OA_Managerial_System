@@ -105,5 +105,28 @@ namespace OA_Managerial_System.Webapp.Controllers
             ViewBag.AllUserRoleIdList = allUserRoleIdList;
             return View();
         }
+        /// 完成用户角色的分配
+        public ActionResult SetUserRoleInfo()
+        {
+            int userId = int.Parse(Request["userId"]);
+            string[] allKeys = Request.Form.AllKeys;//获取所有表单元素name属性值。
+            List<int> roleIdList = new List<int>();
+            foreach (string key in allKeys)
+            {
+                if (key.StartsWith("cba_"))
+                {
+                    string k = key.Replace("cba_", "");
+                    roleIdList.Add(Convert.ToInt32(k));
+                }
+            }
+            if (userinfoService.SetUserRoleInfo(userId, roleIdList))//设置用户的角色
+            {
+                return Content("ok");
+            }
+            else
+            {
+                return Content("no");
+            }
+        }
     }
 }
