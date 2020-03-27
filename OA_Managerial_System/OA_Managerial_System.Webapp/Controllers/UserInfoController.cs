@@ -13,9 +13,11 @@ namespace OA_Managerial_System.Webapp.Controllers
     public class UserInfoController : BaseController
     {
         public IUserinfoService userinfoService;
-        public UserInfoController(IUserinfoService _userinfoService)
+        public IRoleInfoService roleInfoService;
+        public UserInfoController(IUserinfoService _userinfoService,IRoleInfoService _roleInfoService)
         {
             userinfoService = _userinfoService;
+            roleInfoService = _roleInfoService;
         }
         // GET: UserInfo
         public ActionResult Index()
@@ -86,6 +88,22 @@ namespace OA_Managerial_System.Webapp.Controllers
                 return Content("fail");
             }
           
+        }
+        //展示用户已有的角色
+        public ActionResult ShowUserRoleInfo()
+        {
+            int id = int.Parse(Request["id"]);
+            var userInfo = userinfoService.LoadEnity(u => u.ID == id).FirstOrDefault();
+            ViewBag.UserInfo = userInfo;
+            //查询所有的角色.
+            short delFlag = (short)DeleteType.Normarl;
+            var allRoleList = roleInfoService.LoadEnity(r => r.DelFlag == delFlag).ToList();
+            //查询一下要分配角色的用户以前具有了哪些角色编号。
+            var allUserRoleIdList = (from r in userInfo.RoleInfo
+                                     select r.ID).ToList();
+            ViewBag.AllRoleList = allRoleList;
+            ViewBag.AllUserRoleIdList = allUserRoleIdList;
+            return View();
         }
     }
 }

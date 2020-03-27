@@ -134,8 +134,8 @@ function showSetUserRoleInfo() {
     $("#setUsrRoleDiv").css("display", "block");
     $('#setUsrRoleDiv').dialog({
         title: '为用户分配角色数据',
-        width: 300,
-        height: 200,
+        width: 500,
+        height: 300,
         collapsible: true,
         maximizable: true,
         resizable: true,
@@ -154,14 +154,14 @@ function showSetUserRoleInfo() {
             }
         }]
     });
-}
+};
 //为用户分配完成角色以后调用的方法。
 function afterSetUserRole(data) {
     if (data == "ok") {
         $('#setUsrRoleDiv').dialog('close');
     }
 
-}
+};
 
 //删除数据
 function deleteInfo(){
@@ -281,27 +281,27 @@ function showEditInfo(){
     $("#delflag").val(data.deflag);
    })   
  $("#editDiv").css("display","block");
- $("#editDiv").dialog({
-    title:"EdituserInfo",
-    width:300,
-    height:200,
-    collapsible:true,
-    modal:true,
-    buttons:[{
-    text:"OK",
-    iconCls:"icon-ok",
-    handler:function(){
-      $("#editform").submit();
-    }
-    },{
-        text:"canel",
-        handler:function(){
-            $("#addDiv").dialog("close");
-        }
-    
-    }]
-    
-    })
+    $("#editDiv").dialog({
+        title: "EdituserInfo",
+        width: 300,
+        height: 200,
+        collapsible: true,
+        modal: true,
+        buttons: [{
+            text: "OK",
+            iconCls: "icon-ok",
+            handler: function () {
+                $("#editform").submit();
+            }
+        }, {
+            text: "canel",
+            handler: function () {
+                $("#addDiv").dialog("close");
+            }
+
+        }]
+
+    });
 
 }
 //更新以后调用该方法.
