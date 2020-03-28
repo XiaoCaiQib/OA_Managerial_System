@@ -1,0 +1,79 @@
+﻿
+@{
+    Layout = null;
+}
+@using OA_Managerial_System.Model
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>为用户分配权限</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+</head>
+<body>
+    <div>
+        为
+        @{
+            UserInfo userinfo = ViewBag.Userinfo;
+            <span>
+                @userinfo.UName
+            </span>
+        }分配权限
+        <table border="1">
+            <tr>
+                <th>编号</th>
+                <th>权限名称</th>
+                <th>Url</th>
+                <th>HttpMethod</th>
+                <th>操作</th>
+            </tr>
+            @{
+                List<ActionInfo> List = ViewBag.AllactionList;
+                List<R_UserInfo_ActionInfo> UserActions = ViewBag.AllUserinfoList;
+                foreach (var item in List)
+                {
+                    var actionname = "cba_" + item.ID;
+                    var notactionname = "nocba_" + item.ID;
+                    <tr>
+                        <td>@item.ID</td>
+                        <td>@item.ActionInfoName</td>
+                        <td>@item.Url</td>
+                        <td>@item.HttpMethod</td>
+                        <td>
+                            @{
+                                var IsExt = (from a in UserActions
+                                             where a.ID == item.ID
+                                             select a).FirstOrDefault();
+                                /*用户中存在权限*/
+                                if (IsExt != null)
+                                {
+                                    /*该权限选中*/
+                                    if (IsExt.IsPass)
+                                    {
+                                        <lable for="@actionname">允许</lable><input type="radio" checked="checked" id="@actionname" name="@actionname" />
+                                        <lable for="@notactionname">允许</lable><input type="radio" id="@notactionname" name="@actionname" />
+                                    }
+                                    /*该权限未选中*/
+                                    else
+                                    {
+                                        <lable for="@actionname">允许</lable><input type="radio" id="@actionname" name="@actionname" />
+                                        <lable for="@notactionname">允许</lable><input type="radio" id="@notactionname" name="@actionname" checked="checked" />
+                                    }
+                                }
+                                /*用户中不存在权限*/
+                                else
+                                {
+                                    <lable for="@actionname">允许</lable><input type="radio" id="@actionname" name="@actionname" />
+                                    <lable for="@notactionname">允许</lable><input type="radio" id="@notactionname" name="@actionname" checked="checked" />
+                                }
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+</body>
+</html>

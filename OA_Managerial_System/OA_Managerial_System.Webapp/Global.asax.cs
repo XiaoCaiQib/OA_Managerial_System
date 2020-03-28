@@ -31,6 +31,7 @@ namespace OA_Managerial_System.Webapp
             //builder的Register方法可以通过多种方式注册类型,之前在控制台程序里面也演示了好几种方式了。
             builder.RegisterType<UserInfoService>().As<IUserinfoService>();
             builder.RegisterType<RoleInfoService>().As<IRoleInfoService>();
+            builder.RegisterType<ActionInfoService>().As<IActionInfoService>();
             //builder.RegisterType<DefaultController>().InstancePerDependency();
             //使用Autofac提供的RegisterControllers扩展方法来对程序集中所有的Controller一次性的完成注册
             builder.RegisterControllers(Assembly.GetExecutingAssembly());
