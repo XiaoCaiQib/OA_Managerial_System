@@ -152,5 +152,21 @@ namespace OA_Managerial_System.Webapp.Controllers
             ViewBag.AllUserinfoList = AllUserinfoList;
             return View();
         }
+        //完成权限分配
+        public ActionResult SetUserAction() {
+            //"Istrue": Istrue, "UserId": UserId, actionId: actionId
+            int Actionid = int.Parse(Request["actionId"]);
+            bool Istrue = Boolean.Parse(Request["Istrue"]);
+            int UserId = int.Parse(Request["UserId"]);
+         bool Isok=   userinfoService.SetUserAction(UserId, Actionid, Istrue);
+            if (Isok)
+            {
+                return Content("ok");
+            }
+            else
+            {
+                return Content("No");
+            }
+        }
     }
 }

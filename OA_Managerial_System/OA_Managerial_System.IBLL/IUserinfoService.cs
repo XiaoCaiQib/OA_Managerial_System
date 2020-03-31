@@ -11,5 +11,7 @@ namespace OA_Managerial_System.IBLL
     {
         bool DleteuserInfo(List<int> arry);
         bool SetUserRoleInfo(int userId, List<int> roleIdList);
+        //"Istrue": Istrue, "UserId": UserId, actionId: actionId
+        bool SetUserAction(int userid, int actionId, bool Istrue);
     }
 }

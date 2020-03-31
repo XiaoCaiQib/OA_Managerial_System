@@ -11,6 +11,12 @@
     <title>为用户分配权限</title>
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <link href="~/Content/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/Content/themes/icon.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.easyui.min.js"></script>
+    <script src="~/Scripts/easyui-lang-zh_CN.js"></script>
+    <script src="~/Scripts/datapattern.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
 </head>
 <body>
     <div>
@@ -44,29 +50,32 @@
                         <td>
                             @{
                                 var IsExt = (from a in UserActions
-                                             where a.ID == item.ID
+                                             where a.ActionInfoID == item.ID
                                              select a).FirstOrDefault();
                                 /*用户中存在权限*/
                                 if (IsExt != null)
                                 {
+                                   
                                     /*该权限选中*/
                                     if (IsExt.IsPass)
                                     {
-                                        <lable for="@actionname">允许</lable><input type="radio" checked="checked" id="@actionname" name="@actionname" />
-                                        <lable for="@notactionname">允许</lable><input type="radio" id="@notactionname" name="@actionname" />
+                                        <lable for="@actionname">允许</lable>
+                                        <input type="radio" checked="checked" id="@actionname" name="@actionname" value="true" class="radio" ids="@item.ID" />
+                                        <lable for="@notactionname">禁止</lable>
+                                        <input type="radio" id="@notactionname" name="@actionname" value="false" class="radio" ids="@item.ID" />
                                     }
                                     /*该权限未选中*/
                                     else
                                     {
-                                        <lable for="@actionname">允许</lable><input type="radio" id="@actionname" name="@actionname" />
-                                        <lable for="@notactionname">允许</lable><input type="radio" id="@notactionname" name="@actionname" checked="checked" />
+                                        <lable for="@actionname">允许</lable><input type="radio" id="@actionname" name="@actionname" value="true" class="radio" ids="@item.ID" />
+                                        <lable for="@notactionname">禁止</lable><input type="radio" id="@notactionname" name="@actionname" checked="checked" value="false" class="radio" ids="@item.ID" />
                                     }
                                 }
                                 /*用户中不存在权限*/
                                 else
                                 {
-                                    <lable for="@actionname">允许</lable><input type="radio" id="@actionname" name="@actionname" />
-                                    <lable for="@notactionname">允许</lable><input type="radio" id="@notactionname" name="@actionname" checked="checked" />
+                                    <lable for="@actionname">允许</lable><input type="radio" id="@actionname" name="@actionname" value="true" class="radio" ids="@item.ID" />
+                                    <lable for="@notactionname">禁止</lable><input type="radio" id="@notactionname" name="@actionname" checked="checked" value="false" class="radio" ids="@item.ID" />
                                 }
                             }
                         </td>
@@ -76,4 +85,38 @@
         </table>
     </div>
 </body>
+
 </html>
+<script>
+    $(function () {
+
+        BingClickEnent();
+    });
+    function BingClickEnent() {
+        $(".radio").click(
+            function () {
+                var Istrue = $(this).val(); //是否允许该权限
+                var UserId =@userinfo.ID;  //用户id
+                var actionId = $(this).attr("ids"); //获取权限编号
+                $.post("/Userinfo/SetUserAction", { "Istrue": Istrue, "UserId": UserId, actionId: actionId }, function (data) {
+                    //处理data
+                    if (data == "ok") {
+                        $.messager.show({
+                            title: '提示',
+                            msg: '权限分配成功',
+                            showType: 'show'
+                        });
+
+                    } else {
+                        $.messager.show({
+                            title: '提示',
+                            msg: '权限分配失败',
+                            showType: 'show'
+                        });
+                    }
+                })
+            }
+        )
+
+    }
+</script>

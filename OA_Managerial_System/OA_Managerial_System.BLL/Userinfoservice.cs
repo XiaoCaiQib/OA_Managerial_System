@@ -23,6 +23,27 @@ namespace OA_Managerial_System.BLL
             }
             return CurrentDBSession.SaveChanges();
         }
+        //为用户分配权限
+        public bool SetUserAction(int userid, int actionId, bool Istrue)
+        {
+            var userinfo_action = this.CurrentDBSession.R_UserInfo_ActionInfoDal.
+                LoadEnity(u => u.ActionInfoID == actionId && u.UserInfoID == userid).FirstOrDefault();
+            if (userinfo_action == null)
+            {
+                R_UserInfo_ActionInfo r_UserInfo_ActionInfo = new R_UserInfo_ActionInfo();
+                r_UserInfo_ActionInfo.UserInfoID = userid;
+                r_UserInfo_ActionInfo.ActionInfoID = actionId;
+                r_UserInfo_ActionInfo.IsPass = Istrue;
+                this.CurrentDBSession.R_UserInfo_ActionInfoDal.Addentity(r_UserInfo_ActionInfo);
+
+            }
+            else
+            {
+                userinfo_action.IsPass = Istrue;
+                this.CurrentDBSession.R_UserInfo_ActionInfoDal.Updateentity(userinfo_action);
+            }
+            return this.CurrentDBSession.SaveChanges() ;
+        }
 
         /// <summary>
         /// 为用户分配角色
