@@ -15,11 +15,13 @@ namespace OA_Managerial_System.Webapp.Controllers
         public IUserinfoService userinfoService;
         public IRoleInfoService roleInfoService;
         public IActionInfoService actionInfoservice;
-        public UserInfoController(IUserinfoService _userinfoService, IRoleInfoService _roleInfoService, IActionInfoService _actionInfoService)
+        public IR_UserInfo_ActionInfoService r_UserInfo_ActionInfoService;
+        public UserInfoController(IUserinfoService _userinfoService, IRoleInfoService _roleInfoService, IActionInfoService _actionInfoService, IR_UserInfo_ActionInfoService _r_UserInfo_ActionInfoService)
         {
             userinfoService = _userinfoService;
             roleInfoService = _roleInfoService;
             actionInfoservice = _actionInfoService;
+            r_UserInfo_ActionInfoService = _r_UserInfo_ActionInfoService;
         }
         // GET: UserInfo
         public ActionResult Index()
@@ -166,6 +168,27 @@ namespace OA_Managerial_System.Webapp.Controllers
             else
             {
                 return Content("No");
+            }
+        }
+        //权限清除
+        public ActionResult ClearUserAction() {
+            int UserId = int.Parse(Request["userId"]);
+            int ActionId = int.Parse(Request["actionId"]);
+           var  userinfo=  r_UserInfo_ActionInfoService.LoadEnity(u =>u.ActionInfoID== ActionId&&u.UserInfoID== UserId).FirstOrDefault();
+            if (userinfo!=null)
+            {
+                if (r_UserInfo_ActionInfoService.Deleteeneity(userinfo))
+                {
+                    return Content("ok:删除成功");
+                }
+                else
+                {
+                    return Content("ok:删除成功");
+                }
+            }
+            else
+            {
+                return Content("no:删除失败");
             }
         }
     }

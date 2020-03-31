@@ -32,6 +32,7 @@ namespace OA_Managerial_System.Webapp
             builder.RegisterType<UserInfoService>().As<IUserinfoService>();
             builder.RegisterType<RoleInfoService>().As<IRoleInfoService>();
             builder.RegisterType<ActionInfoService>().As<IActionInfoService>();
+            builder.RegisterType<R_UserInfo_ActionInfoService>().As<IR_UserInfo_ActionInfoService>();
             //builder.RegisterType<DefaultController>().InstancePerDependency();
             //使用Autofac提供的RegisterControllers扩展方法来对程序集中所有的Controller一次性的完成注册
             builder.RegisterControllers(Assembly.GetExecutingAssembly());

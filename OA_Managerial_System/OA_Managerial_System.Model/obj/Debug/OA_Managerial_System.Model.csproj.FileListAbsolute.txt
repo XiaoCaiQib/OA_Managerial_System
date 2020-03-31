@@ -8,4 +8,3 @@ D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Model\obj\Debug\OA_Man
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Model\obj\Debug\OA_Managerial_System.Model.csproj.CopyComplete
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Model\obj\Debug\OA_Managerial_System.Model.dll
 D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Model\obj\Debug\OA_Managerial_System.Model.pdb
-D:\JavaTools\OA\OA_Managerial_System\OA_Managerial_System.Model\obj\Debug\OA_Managerial_System.Model.csprojAssemblyReference.cache

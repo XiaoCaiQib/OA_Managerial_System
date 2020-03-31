@@ -55,7 +55,7 @@
                                 /*用户中存在权限*/
                                 if (IsExt != null)
                                 {
-                                   
+
                                     /*该权限选中*/
                                     if (IsExt.IsPass)
                                     {
@@ -75,8 +75,9 @@
                                 else
                                 {
                                     <lable for="@actionname">允许</lable><input type="radio" id="@actionname" name="@actionname" value="true" class="radio" ids="@item.ID" />
-                                    <lable for="@notactionname">禁止</lable><input type="radio" id="@notactionname" name="@actionname" checked="checked" value="false" class="radio" ids="@item.ID" />
+                                    <lable for="@notactionname">禁止</lable><input type="radio" id="@notactionname" name="@actionname" value="false" class="radio" ids="@item.ID" />
                                 }
+                                <input type="button" value="清除" class="btnClear" ids="@item.ID" />
                             }
                         </td>
                     </tr>
@@ -89,8 +90,8 @@
 </html>
 <script>
     $(function () {
-
         BingClickEnent();
+        bindClearBtnClickEvent();
     });
     function BingClickEnent() {
         $(".radio").click(
@@ -118,5 +119,29 @@
             }
         )
 
+    }
+        //清除权限
+    function bindClearBtnClickEvent() {
+        $(".btnClear").click(function () {
+              var UserId =@userinfo.ID;  //用户id
+            var actionId = $(this).attr("ids");//获取权限编号
+            var $control=$(this)
+            $.post("/UserInfo/ClearUserAction", { "actionId": actionId, "userId": UserId }, function (data) {
+                var serverData = data.split(':');
+                if (serverData[0] == "ok") {
+                    $control.parent().find(".radio").removeAttr("checked");
+                    showMsg(serverData[1]);
+                } else {
+                    showMsg(serverData[1]);
+                }
+            });
+        });
+    }
+    function showMsg(msg) {
+        $.messager.show({
+            title: '提示',
+            msg: msg,
+            showType: 'show'
+        });
     }
 </script>
